@@ -1,0 +1,44 @@
+{
+  "name": "@jitesoft/babel-preset-react",
+  "private": false,
+  "description": "Babel preset for react with configurations for jitesoft projects.",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/jitesoft/open-source/javascript/babel-preset-react/issues"
+  },
+  "repository": {
+    "url": "git@gitlab.com:jitesoft/open-source/javascript/babel-preset-react.git",
+    "type": "git"
+  },
+  "keywords": [
+    "babel",
+    "preset",
+    "react",
+    "jitesoft"
+  ],
+  "author": {
+    "url": "https://jitesoft.com",
+    "email": "johannes@jitesoft.com",
+    "name": "Johannes Tegnér"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@babel/helper-plugin-utils": "7.0.0",
+    "@jitesoft/babel-preset-main": "2.0.0",
+    "@babel/plugin-transform-react-display-name": "^7.7.4",
+    "@babel/plugin-transform-react-jsx": "^7.7.7",
+    "@babel/plugin-syntax-jsx": "^7.7.4",
+    "@babel/plugin-transform-react-jsx-source": "^7.7.4",
+    "@babel/plugin-transform-react-jsx-self": "^7.7.4"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.7.7",
+    "core-js": "^3.6"
+  },
+  "scripts": {
+    "test": "npm audit"
+  }
+}
