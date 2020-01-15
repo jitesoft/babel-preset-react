@@ -20,7 +20,7 @@ module.exports = declare((api, options) => {
   return {
     'presets': [
       [
-        require('@jitesoft/preset-main'),
+        require('@jitesoft/babel-preset-main'),
         options
       ],
     ].filter(p => p !== null),
