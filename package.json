@@ -32,13 +32,17 @@
     "@babel/plugin-transform-react-jsx": "7.9.1",
     "@babel/plugin-syntax-jsx": "7.8.3",
     "@babel/plugin-transform-react-jsx-source": "7.9.0",
-    "@babel/plugin-transform-react-jsx-self": "7.9.0"
+    "@babel/plugin-transform-react-jsx-self": "7.9.0",
+    "snyk": "^1.316.1"
   },
   "peerDependencies": {
     "@babel/core": "^7.9.0",
     "core-js": "^3.6"
   },
   "scripts": {
-    "test": "npm audit"
-  }
+    "test": "npm audit",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
