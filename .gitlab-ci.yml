@@ -1,16 +1,21 @@
 include:
-  - https://gitlab.com/jitesoft/gitlab-ci-lib/raw/master/dependency_scanning.yml
-  - https://gitlab.com/jitesoft/gitlab-ci-lib/raw/master/js_common.yml
+  - file: /Scan/gemnasium.yml
+    project: jitesoft/gitlab-ci-lib
+  - file: /js_common.yml
+    project: jitesoft/gitlab-ci-lib
+  - file: /license_management.yml
+    project: jitesoft/gitlab-ci-lib
 
 stages:
   - test
+  - scan
   - deploy
 
 test:
   extends: .npm:test
 
 scan:
-  extends: .scan:npm
+  extends: .dependency_scan
 
 deploy:
   tags: [ jitesoft, protected, npm ]
