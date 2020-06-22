@@ -26,16 +26,16 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@babel/helper-plugin-utils": "7.10.1",
-    "@jitesoft/babel-preset-main": "2.3.0",
-    "@babel/plugin-transform-react-display-name": "7.10.1",
-    "@babel/plugin-transform-react-jsx": "7.10.1",
+    "@babel/helper-plugin-utils": "7.10.3",
+    "@jitesoft/babel-preset-main": "2.3.2",
+    "@babel/plugin-transform-react-display-name": "7.10.3",
+    "@babel/plugin-transform-react-jsx": "7.10.3",
     "@babel/plugin-syntax-jsx": "7.10.1",
     "@babel/plugin-transform-react-jsx-source": "7.10.1",
     "@babel/plugin-transform-react-jsx-self": "7.10.1"
   },
   "peerDependencies": {
-    "@babel/core": "^7.10.0",
+    "@babel/core": "^7.10.3",
     "core-js": "^3.6"
   },
   "scripts": {
