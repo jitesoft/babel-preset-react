@@ -1,22 +1,5 @@
+variables:
+  NPM_BUILD_DISABLED: "true"
+
 include:
-  - file: /Scan/gemnasium.yml
-    project: jitesoft/gitlab-ci-lib
-  - file: /js_common.yml
-    project: jitesoft/gitlab-ci-lib
-  - file: /license_management.yml
-    project: jitesoft/gitlab-ci-lib
-
-stages:
-  - test
-  - scan
-  - deploy
-
-test:
-  extends: .npm:test
-
-scan:
-  extends: .dependency_scan
-
-deploy:
-  tags: [ jitesoft, protected, npm ]
-  extends: .npm:deploy
+  - remote: https://gitlab.com/jitesoft/gitlab-ci-lib/-/raw/master/Auto/npm.yml
