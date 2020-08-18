@@ -34,6 +34,11 @@
     "@babel/plugin-transform-react-jsx-source": "7.10.5",
     "@babel/plugin-transform-react-jsx-self": "7.10.4"
   },
+  "eslintConfig": {
+    "extends": [
+      "@jitesoft"
+    ]
+  },
   "peerDependencies": {
     "@babel/core": "^7.11.1",
     "core-js": "^3.6"
@@ -43,6 +48,6 @@
     "@jitesoft/eslint-config": "^2.5.0"
   },
   "scripts": {
-    "test": "npm audit"
+    "test": "eslint index.js"
   }
 }

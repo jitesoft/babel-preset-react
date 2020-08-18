@@ -1,30 +1,25 @@
 const helperUtils = require('@babel/helper-plugin-utils');
-const declare = helperUtils['declare'];
-
-const defaultTargets = {
-  web: 'defaults',
-  node: 'node >= 12'
-};
+const declare = helperUtils.declare;
 
 module.exports = declare((api, options) => {
   api.assertVersion(7);
 
-  //region Helpers.
+  // region Helpers.
   const isExcluded = (str, or) => ((options.exclude || []).indexOf(str) === -1) ? or() : null;
-  //endregion
+  // endregion
 
   options.targets = options.targets || {
-    "esmodules": true
+    esmodules: true
   };
 
   return {
-    'presets': [
+    presets: [
       [
         require('@jitesoft/babel-preset-main'),
         options
-      ],
+      ]
     ].filter(p => p !== null),
-    'plugins': [
+    plugins: [
       isExcluded('react-jsx', () => [
         require('@babel/plugin-transform-react-jsx'),
         {
