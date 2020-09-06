@@ -27,7 +27,7 @@
   "license": "MIT",
   "dependencies": {
     "@babel/helper-plugin-utils": "7.10.4",
-    "@jitesoft/babel-preset-main": "2.5.1",
+    "@jitesoft/babel-preset-main": "2.5.2",
     "@babel/plugin-transform-react-display-name": "7.10.4",
     "@babel/plugin-transform-react-jsx": "7.10.4",
     "@babel/plugin-syntax-jsx": "7.10.4",
@@ -40,12 +40,12 @@
     ]
   },
   "peerDependencies": {
-    "@babel/core": "^7.11.1",
+    "@babel/core": "^7.11.6",
     "core-js": "^3.6"
   },
   "devDependencies": {
-    "eslint": "^7.7.0",
-    "@jitesoft/eslint-config": "^2.5.0"
+    "eslint": "^7.8.1",
+    "@jitesoft/eslint-config": "^2.5.1"
   },
   "scripts": {
     "test": "eslint index.js"
