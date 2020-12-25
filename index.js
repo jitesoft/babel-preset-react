@@ -30,10 +30,11 @@ module.exports = declare((api, options) => {
           throwIfNamespace: options.throwIfNamespace || true
         }
       ]),
-      isExcluded('react-display-name', () =>
-        require('@babel/plugin-transform-react-display-name')),
-      isExcluded('syntax-jsx', () =>
-        require('@babel/plugin-syntax-jsx')),
+      isExcluded('react-display-name', () => require('@babel/plugin-transform-react-display-name')),
+      isExcluded('syntax-jsx', () => require('@babel/plugin-syntax-jsx')),
+      isExcluded('react-constant-elements', () => require('@babel/plugin-transform-react-constant-elements')),
+      isExcluded('react-jsx-compat', () => require('@babel/plugin-transform-react-jsx-compat')),
+      isExcluded('react-inline-elements', () => require('@babel/plugin-transform-react-inline-elements')),
       isExcluded('react-jsx-source', () => process.env.BABEL_ENV === 'development' ? require('@babel/plugin-transform-react-jsx-source') : null),
       isExcluded('react-jsx-self', () => process.env.BABEL_ENV === 'development' ? require('@babel/plugin-transform-react-jsx-self') : null)
     ].filter(p => p !== null)

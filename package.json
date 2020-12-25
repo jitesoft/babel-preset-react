@@ -27,12 +27,15 @@
   "license": "MIT",
   "dependencies": {
     "@babel/helper-plugin-utils": "7.10.4",
-    "@jitesoft/babel-preset-main": "2.7.1",
-    "@babel/plugin-transform-react-display-name": "7.12.1",
-    "@babel/plugin-transform-react-jsx": "7.12.11",
     "@babel/plugin-syntax-jsx": "7.12.1",
+    "@babel/plugin-transform-react-constant-elements": "^7.12.1",
+    "@babel/plugin-transform-react-display-name": "7.12.1",
+    "@babel/plugin-transform-react-inline-elements": "^7.12.1",
+    "@babel/plugin-transform-react-jsx": "7.12.12",
+    "@babel/plugin-transform-react-jsx-compat": "^7.12.1",
+    "@babel/plugin-transform-react-jsx-self": "7.12.1",
     "@babel/plugin-transform-react-jsx-source": "7.12.1",
-    "@babel/plugin-transform-react-jsx-self": "7.12.1"
+    "@jitesoft/babel-preset-main": "2.7.2"
   },
   "eslintConfig": {
     "extends": [

@@ -13,6 +13,9 @@ Includes the following presets and plugins:
 ```
 @jitesoft/preset-main
 @babel/plugin-transform-react-display-name
+@babel/plugin-transform-react-inline-elements
+@babel/plugin-transform-react-constant-elements
+@babel/plugin-transform-react-jsx-compat
 @babel/plugin-transform-react-jsx
 @babel/plugin-syntax-jsx
 ```
