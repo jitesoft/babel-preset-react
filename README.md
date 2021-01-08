@@ -13,12 +13,15 @@ Includes the following presets and plugins:
 ```
 @jitesoft/preset-main
 @babel/plugin-transform-react-display-name
-@babel/plugin-transform-react-inline-elements
-@babel/plugin-transform-react-constant-elements
-@babel/plugin-transform-react-jsx-compat
 @babel/plugin-transform-react-jsx
 @babel/plugin-syntax-jsx
+
+@babel/plugin-transform-react-inline-elements *
+@babel/plugin-transform-react-constant-elements *
+@babel/plugin-transform-react-jsx-compat *
 ```
+
+_* Packages will only be used if they are added to the `include` array of the options object._
 
 If babel is in development mode, the following plugins will be enabled:
 
@@ -34,6 +37,7 @@ Requires `corejs (v 3+)` and `@babel/core`.
 Other than the default presets in [`@jitesoft/babel-preset-main`](https://gitlab.com/jitesoft/open-source/javascript/babel-preset-main), the following options
 are available:
 
+* `include` (array) - Addition for the three plugins marked with `*` in the above list.
 * `pragma` (string) - Defines which create element method to use. Defaults to `React.createElement`.
 * `pragmaFrag` (string) - Defines which Fragment component to use. Defaults to `React.Fragment`.
 * `useBuiltIns` (boolean) - Use built ins instead of polyfill. Uses same value as passed for the main preset.
