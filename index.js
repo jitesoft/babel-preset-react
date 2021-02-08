@@ -42,4 +42,3 @@ module.exports = declare((api, options) => {
     ].filter(p => p !== null)
   };
 });
-
