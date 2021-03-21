@@ -28,14 +28,14 @@
   "dependencies": {
     "@babel/helper-plugin-utils": "7.13.0",
     "@babel/plugin-syntax-jsx": "7.12.13",
-    "@babel/plugin-transform-react-constant-elements": "7.12.13",
+    "@babel/plugin-transform-react-constant-elements": "7.13.10",
     "@babel/plugin-transform-react-display-name": "7.12.13",
     "@babel/plugin-transform-react-inline-elements": "7.12.13",
     "@babel/plugin-transform-react-jsx": "7.12.17",
     "@babel/plugin-transform-react-jsx-compat": "7.12.13",
     "@babel/plugin-transform-react-jsx-self": "7.12.13",
     "@babel/plugin-transform-react-jsx-source": "7.12.13",
-    "@jitesoft/babel-preset-main": "2.8.1"
+    "@jitesoft/babel-preset-main": "2.8.2"
   },
   "eslintConfig": {
     "extends": [
@@ -43,12 +43,12 @@
     ]
   },
   "peerDependencies": {
-    "@babel/core": "^7.13.8",
+    "@babel/core": "^7.13.10",
     "core-js": "^3.9"
   },
   "devDependencies": {
-    "@jitesoft/eslint-config": "^2.14.0",
-    "eslint": "^7.21.0"
+    "@jitesoft/eslint-config": "^2.15.0",
+    "eslint": "^7.22.0"
   },
   "scripts": {
     "test": "eslint index.js"
