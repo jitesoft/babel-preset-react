@@ -5,8 +5,8 @@ module.exports = declare((api, options) => {
   api.assertVersion(7);
 
   // region Helpers.
-  const isExcluded = (str, or) => ((options.exclude || []).some(s => s.indexOf(str) === -1)) ? or() : null;
-  const isIncluded = (str, and) => ((options.include || []).some(s => s.indexOf(str) !== -1)) ? and() : null;
+  const isNotExcluded = (str, then) => ((options.exclude || []).indexOf(str) === -1) ? then() : null;
+  const isIncluded = (str, and) => ((options.include || []).some(s => s.indexOf(str) === -1)) ? and() : null;
   // endregion
 
   options.targets = options.targets || {
@@ -21,7 +21,7 @@ module.exports = declare((api, options) => {
       ]
     ].filter(p => p !== null),
     plugins: [
-      isExcluded('react-jsx', () => [
+      isNotExcluded('react-jsx', () => [
         require('@babel/plugin-transform-react-jsx'),
         {
           pragma: options.pragma || 'React.createElement',
@@ -35,10 +35,10 @@ module.exports = declare((api, options) => {
       isIncluded('react-jsx-compat', () => require('@babel/plugin-transform-react-jsx-compat')),
       isIncluded('react-inline-elements', () => require('@babel/plugin-transform-react-inline-elements')),
 
-      isExcluded('react-display-name', () => require('@babel/plugin-transform-react-display-name')),
-      isExcluded('syntax-jsx', () => require('@babel/plugin-syntax-jsx')),
-      isExcluded('react-jsx-source', () => process.env.BABEL_ENV === 'development' ? require('@babel/plugin-transform-react-jsx-source') : null),
-      isExcluded('react-jsx-self', () => process.env.BABEL_ENV === 'development' ? require('@babel/plugin-transform-react-jsx-self') : null)
+      isNotExcluded('react-display-name', () => require('@babel/plugin-transform-react-display-name')),
+      isNotExcluded('syntax-jsx', () => require('@babel/plugin-syntax-jsx')),
+      isNotExcluded('react-jsx-source', () => process.env.BABEL_ENV === 'development' ? require('@babel/plugin-transform-react-jsx-source') : null),
+      isNotExcluded('react-jsx-self', () => process.env.BABEL_ENV === 'development' ? require('@babel/plugin-transform-react-jsx-self') : null)
     ].filter(p => p !== null)
   };
 });
