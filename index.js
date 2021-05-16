@@ -34,7 +34,6 @@ module.exports = declare((api, options) => {
       isIncluded('react-constant-elements', () => require('@babel/plugin-transform-react-constant-elements')),
       isIncluded('react-jsx-compat', () => require('@babel/plugin-transform-react-jsx-compat')),
       isIncluded('react-inline-elements', () => require('@babel/plugin-transform-react-inline-elements')),
-
       isNotExcluded('react-display-name', () => require('@babel/plugin-transform-react-display-name')),
       isNotExcluded('syntax-jsx', () => require('@babel/plugin-syntax-jsx')),
       isNotExcluded('react-jsx-source', () => process.env.BABEL_ENV === 'development' ? require('@babel/plugin-transform-react-jsx-source') : null),
