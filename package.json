@@ -32,15 +32,15 @@
     "@babel/plugin-transform-react-constant-elements": "7.13.13",
     "@babel/plugin-transform-react-display-name": "7.14.2",
     "@babel/plugin-transform-react-inline-elements": "7.12.13",
-    "@babel/plugin-transform-react-jsx": "7.13.12",
+    "@babel/plugin-transform-react-jsx": "7.14.3",
     "@babel/plugin-transform-react-jsx-compat": "7.12.13",
     "@babel/plugin-transform-react-jsx-self": "7.12.13",
     "@babel/plugin-transform-react-jsx-source": "7.14.2",
-    "@jitesoft/babel-preset-main": "2.11.3"
+    "@jitesoft/babel-preset-main": "2.11.5"
   },
   "peerDependencies": {
-    "@babel/core": "^7.14",
-    "core-js": "^3.12"
+    "@babel/core": ">=7.14",
+    "core-js": ">=3.13"
   },
   "peerDependenciesMeta": {
     "@babel/core": {
