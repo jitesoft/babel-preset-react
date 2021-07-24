@@ -7,7 +7,7 @@
     "access": "public"
   },
   "bugs": {
-    "url": "https://gitlab.com/jitesoft/open-source/javascript/babel-preset-react/issues",
+    "url": "https://github.com/jitesoft/babel-preset-react/issues",
     "email": "sec@jitesoft.com"
   },
   "repository": {
@@ -36,7 +36,7 @@
     "@babel/plugin-transform-react-jsx-compat": "7.14.5",
     "@babel/plugin-transform-react-jsx-self": "7.14.5",
     "@babel/plugin-transform-react-jsx-source": "7.14.5",
-    "@jitesoft/babel-preset-main": "2.12.0"
+    "@jitesoft/babel-preset-main": "2.12.1"
   },
   "peerDependencies": {
     "@babel/core": ">=7.14",

@@ -2,11 +2,5 @@ variables:
   NPM_BUILD_DISABLED: "true"
   DISABLE_TEST: "true"
 
-stages:
-  - build
-  - scan
-  - test
-  - deploy
-
 include:
   - remote: https://gitlab.com/jitesoft/gitlab-ci-lib/-/raw/master/Auto/npm.yml
