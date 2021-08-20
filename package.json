@@ -30,17 +30,17 @@
     "@babel/helper-plugin-utils": "7.14.5",
     "@babel/plugin-syntax-jsx": "7.14.5",
     "@babel/plugin-transform-react-constant-elements": "7.14.5",
-    "@babel/plugin-transform-react-display-name": "7.14.5",
+    "@babel/plugin-transform-react-display-name": "7.15.1",
     "@babel/plugin-transform-react-inline-elements": "7.14.5",
-    "@babel/plugin-transform-react-jsx": "7.14.5",
+    "@babel/plugin-transform-react-jsx": "7.14.9",
     "@babel/plugin-transform-react-jsx-compat": "7.14.5",
-    "@babel/plugin-transform-react-jsx-self": "7.14.5",
+    "@babel/plugin-transform-react-jsx-self": "7.14.9",
     "@babel/plugin-transform-react-jsx-source": "7.14.5",
-    "@jitesoft/babel-preset-main": "2.12.1"
+    "@jitesoft/babel-preset-main": "2.13.0"
   },
   "peerDependencies": {
-    "@babel/core": ">=7.14",
-    "core-js": ">=3.15"
+    "@babel/core": ">=7.15",
+    "core-js": ">=3.16"
   },
   "peerDependenciesMeta": {
     "@babel/core": {
