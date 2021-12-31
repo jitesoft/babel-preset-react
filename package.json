@@ -27,7 +27,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@babel/helper-plugin-utils": "7.16.5",
+    "@babel/helper-plugin-utils": "7.16.7",
     "@babel/plugin-syntax-jsx": "7.16.5",
     "@babel/plugin-transform-react-constant-elements": "7.16.5",
     "@babel/plugin-transform-react-display-name": "7.16.5",
