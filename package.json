@@ -36,7 +36,7 @@
     "@babel/plugin-transform-react-jsx-compat": "7.16.7",
     "@babel/plugin-transform-react-jsx-self": "7.16.7",
     "@babel/plugin-transform-react-jsx-source": "7.16.7",
-    "@jitesoft/babel-preset-main": "2.16.0"
+    "@jitesoft/babel-preset-main": "2.16.1"
   },
   "peerDependencies": {
     "@babel/core": ">=7.16",
