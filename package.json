@@ -29,14 +29,14 @@
   "dependencies": {
     "@babel/helper-plugin-utils": "7.16.7",
     "@babel/plugin-syntax-jsx": "7.16.7",
-    "@babel/plugin-transform-react-constant-elements": "7.16.7",
+    "@babel/plugin-transform-react-constant-elements": "7.17.6",
     "@babel/plugin-transform-react-display-name": "7.16.7",
     "@babel/plugin-transform-react-inline-elements": "7.16.7",
-    "@babel/plugin-transform-react-jsx": "7.16.7",
+    "@babel/plugin-transform-react-jsx": "7.17.3",
     "@babel/plugin-transform-react-jsx-compat": "7.16.7",
     "@babel/plugin-transform-react-jsx-self": "7.16.7",
     "@babel/plugin-transform-react-jsx-source": "7.16.7",
-    "@jitesoft/babel-preset-main": "2.17.1"
+    "@jitesoft/babel-preset-main": "3.0.0"
   },
   "peerDependencies": {
     "@babel/core": ">=7.17",

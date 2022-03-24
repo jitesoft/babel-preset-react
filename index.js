@@ -13,6 +13,16 @@ module.exports = declare((api, options) => {
     esmodules: true
   };
 
+  options.react = {
+    runtime: 'classic',
+    pragma: 'React.createElement',
+    pragmaFrag: 'React.Fragment',
+    importSource: 'react',
+    throwIfNamespace: true,
+    useSpread: false,
+    ...(options.react || {}),
+  };
+
   return {
     presets: [
       [
@@ -24,11 +34,12 @@ module.exports = declare((api, options) => {
       isNotExcluded('react-jsx', () => [
         require('@babel/plugin-transform-react-jsx'),
         {
-          pragma: options.pragma || 'React.createElement',
-          pragmaFrag: options.pragmaFrag || 'React.Fragment',
+          runtime: options.runtime || 'classic',
           useBuiltIns: options.useBuiltIns || false,
-          useSpread: options.useSpread || false,
-          throwIfNamespace: options.throwIfNamespace || true
+          pragma: options.react.pragma || 'React.createElement',
+          pragmaFrag: options.react.pragmaFrag || 'React.Fragment',
+          useSpread: options.react.useSpread || false,
+          throwIfNamespace: options.react.throwIfNamespace || true
         }
       ]),
       isIncluded('react-constant-elements', () => require('@babel/plugin-transform-react-constant-elements')),

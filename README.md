@@ -37,9 +37,21 @@ Requires `corejs (v 3+)` and `@babel/core`.
 Other than the default presets in [`@jitesoft/babel-preset-main`](https://gitlab.com/jitesoft/open-source/javascript/babel-preset-main), the following options
 are available:
 
-* `include` (array) - Addition for the three plugins marked with `*` in the above list.
-* `pragma` (string) - Defines which create element method to use. Defaults to `React.createElement`.
-* `pragmaFrag` (string) - Defines which Fragment component to use. Defaults to `React.Fragment`.
-* `useBuiltIns` (boolean) - Use built ins instead of polyfill. Uses same value as passed for the main preset.
-* `useSpread` (boolean) - Enables props spread. Defaults to false.
-* `throwIfNamespace` (boolean) - Makes babel throw an error if using xml namespaces. Defaults to true.
+* `useBuiltIns` (boolean) - Use built ins instead of polyfill. Uses same value as passed for the main preset (defaults to `false`).
+* `include` (array) - Addition for the three plugins marked with `*` in the above list (defaults to empty array).
+
+The following options are prefixed with 'react' and corresponds to the options of the `transform-react-jsx` plugin.  
+(Prefixed with `react.` since v2.0.0).
+
+* `react.useSpread` (boolean) - Uses js props spread instead of babel helper. Defaults to `false`.
+* `react.throwIfNamespace` (boolean) - Makes babel throw an error if using xml namespaces. Defaults to `true`.
+* `react.runtime` (string) - `classic` or `automatic`, defaults to `classic`.
+
+if runtime is set to `classic` (default) the following options are available:
+
+* `react.pragma` (string) - Defines which create element method to use. Defaults to `React.createElement`.
+* `react.pragmaFrag` (string) - Defines which Fragment component to use. Defaults to `React.Fragment`.
+
+if runtime is set to `automatic` the following options are available:
+
+* `react.importSource` (string) - defaults to `react`.
