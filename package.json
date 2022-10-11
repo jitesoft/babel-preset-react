@@ -36,6 +36,6 @@
     "@babel/plugin-transform-react-jsx-compat": "7.18.6",
     "@babel/plugin-transform-react-jsx-self": "7.18.6",
     "@babel/plugin-transform-react-jsx-source": "7.18.6",
-    "@jitesoft/babel-preset-main": "4.0.2"
+    "@jitesoft/babel-preset-main": "4.0.3"
   }
 }
