@@ -27,15 +27,35 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@babel/helper-plugin-utils": "7.19.0",
+    "@babel/helper-plugin-utils": "7.20.2",
     "@babel/plugin-syntax-jsx": "7.18.6",
-    "@babel/plugin-transform-react-constant-elements": "7.18.12",
+    "@babel/plugin-transform-react-constant-elements": "7.20.2",
     "@babel/plugin-transform-react-display-name": "7.18.6",
     "@babel/plugin-transform-react-inline-elements": "7.18.6",
     "@babel/plugin-transform-react-jsx": "7.19.0",
     "@babel/plugin-transform-react-jsx-compat": "7.18.6",
     "@babel/plugin-transform-react-jsx-self": "7.18.6",
     "@babel/plugin-transform-react-jsx-source": "7.19.6",
-    "@jitesoft/babel-preset-main": "4.0.4"
+    "@jitesoft/babel-preset-main": "4.1.0"
+  },
+  "peerDependenciesMeta": {
+    "@babel/runtime-corejs3": {
+      "optional": true
+    },
+    "@babel/core": {
+      "optional": false
+    },
+    "core-js": {
+      "optional": false
+    },
+    "@bloomberg/record-tuple-polyfill": {
+      "optional": true
+    }
+  },
+  "peerDependencies": {
+    "@babel/core": ">=7.20",
+    "@babel/runtime-corejs3": ">=7.20",
+    "core-js": ">=3.26",
+    "@bloomberg/record-tuple-polyfill": "^0.0.5"
   }
 }
