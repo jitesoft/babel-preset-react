@@ -27,16 +27,16 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@babel/helper-plugin-utils": "7.21.5",
-    "@babel/plugin-syntax-jsx": "7.21.4",
-    "@babel/plugin-transform-react-constant-elements": "7.21.3",
-    "@babel/plugin-transform-react-display-name": "7.18.6",
-    "@babel/plugin-transform-react-inline-elements": "7.21.0",
-    "@babel/plugin-transform-react-jsx": "7.21.5",
-    "@babel/plugin-transform-react-jsx-compat": "7.18.6",
-    "@babel/plugin-transform-react-jsx-self": "7.21.0",
-    "@babel/plugin-transform-react-jsx-source": "7.19.6",
-    "@jitesoft/babel-preset-main": "5.1.1"
+    "@babel/helper-plugin-utils": "7.22.5",
+    "@babel/plugin-syntax-jsx": "7.22.5",
+    "@babel/plugin-transform-react-constant-elements": "7.22.5",
+    "@babel/plugin-transform-react-display-name": "7.22.5",
+    "@babel/plugin-transform-react-inline-elements": "7.22.5",
+    "@babel/plugin-transform-react-jsx": "7.22.5",
+    "@babel/plugin-transform-react-jsx-compat": "7.22.5",
+    "@babel/plugin-transform-react-jsx-self": "7.22.5",
+    "@babel/plugin-transform-react-jsx-source": "7.22.5",
+    "@jitesoft/babel-preset-main": "5.2.0"
   },
   "peerDependenciesMeta": {
     "@babel/runtime-corejs3": {
@@ -53,9 +53,9 @@
     }
   },
   "peerDependencies": {
-    "@babel/core": ">=7.21",
-    "@babel/runtime-corejs3": ">=7.21",
-    "core-js": ">=3.30",
+    "@babel/core": ">=7.22",
+    "@babel/runtime-corejs3": ">=7.22",
+    "core-js": ">=3.31",
     "@bloomberg/record-tuple-polyfill": "^0.0.5"
   }
 }
