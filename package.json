@@ -36,7 +36,7 @@
     "@babel/plugin-transform-react-jsx-compat": "7.22.5",
     "@babel/plugin-transform-react-jsx-self": "7.22.5",
     "@babel/plugin-transform-react-jsx-source": "7.22.5",
-    "@jitesoft/babel-preset-main": "5.2.0"
+    "@jitesoft/babel-preset-main": "5.2.1"
   },
   "peerDependenciesMeta": {
     "@babel/runtime-corejs3": {
@@ -55,7 +55,7 @@
   "peerDependencies": {
     "@babel/core": ">=7.22",
     "@babel/runtime-corejs3": ">=7.22",
-    "core-js": ">=3.31",
+    "core-js": ">=3.32",
     "@bloomberg/record-tuple-polyfill": "^0.0.5"
   }
 }
