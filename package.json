@@ -28,15 +28,15 @@
   "license": "MIT",
   "dependencies": {
     "@babel/helper-plugin-utils": "7.22.5",
-    "@babel/plugin-syntax-jsx": "7.22.5",
-    "@babel/plugin-transform-react-constant-elements": "7.22.5",
-    "@babel/plugin-transform-react-display-name": "7.22.5",
-    "@babel/plugin-transform-react-inline-elements": "7.22.5",
+    "@babel/plugin-syntax-jsx": "7.23.3",
+    "@babel/plugin-transform-react-constant-elements": "7.23.3",
+    "@babel/plugin-transform-react-display-name": "7.23.3",
+    "@babel/plugin-transform-react-inline-elements": "7.23.3",
     "@babel/plugin-transform-react-jsx": "7.22.15",
-    "@babel/plugin-transform-react-jsx-compat": "7.22.5",
-    "@babel/plugin-transform-react-jsx-self": "7.22.5",
-    "@babel/plugin-transform-react-jsx-source": "7.22.5",
-    "@jitesoft/babel-preset-main": "5.3.0"
+    "@babel/plugin-transform-react-jsx-compat": "7.23.3",
+    "@babel/plugin-transform-react-jsx-self": "7.23.3",
+    "@babel/plugin-transform-react-jsx-source": "7.23.3",
+    "@jitesoft/babel-preset-main": "5.3.1"
   },
   "peerDependenciesMeta": {
     "@babel/runtime-corejs3": {
