@@ -32,11 +32,11 @@
     "@babel/plugin-transform-react-constant-elements": "7.23.3",
     "@babel/plugin-transform-react-display-name": "7.23.3",
     "@babel/plugin-transform-react-inline-elements": "7.23.3",
-    "@babel/plugin-transform-react-jsx": "7.22.15",
+    "@babel/plugin-transform-react-jsx": "7.23.4",
     "@babel/plugin-transform-react-jsx-compat": "7.23.3",
     "@babel/plugin-transform-react-jsx-self": "7.23.3",
     "@babel/plugin-transform-react-jsx-source": "7.23.3",
-    "@jitesoft/babel-preset-main": "5.3.1"
+    "@jitesoft/babel-preset-main": "5.3.2"
   },
   "peerDependenciesMeta": {
     "@babel/runtime-corejs3": {
@@ -55,7 +55,7 @@
   "peerDependencies": {
     "@babel/core": ">=7.23",
     "@babel/runtime-corejs3": ">=7.23",
-    "core-js": ">=3.33",
+    "core-js": ">=3.34",
     "@bloomberg/record-tuple-polyfill": "^0.0.5"
   }
 }
